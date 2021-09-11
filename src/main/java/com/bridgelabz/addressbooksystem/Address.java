@@ -4,7 +4,7 @@ package com.bridgelabz.addressbooksystem;
 public class Address 
 {
 	private String city, state;
-	private int zip;
+	private long zip;
 	
 	public String getCity() {
 		return city;
@@ -14,7 +14,7 @@ public class Address
 		return state;
 	}
 	
-	public int getZip() {
+	public long getZip() {
 		return zip;
 	}
 	
@@ -26,7 +26,7 @@ public class Address
 		this.state = state;
 	}
 	
-	public void setZip(int zip) {
+	public void setZip(long zip) {
 		this.zip = zip;
 	}
 	
