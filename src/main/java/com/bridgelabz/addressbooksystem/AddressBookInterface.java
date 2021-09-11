@@ -6,5 +6,6 @@ public interface AddressBookInterface {
 	public void operation();
 	public void displayContents();
 	public void editPerson();
+	public void deletePerson();
 
 }

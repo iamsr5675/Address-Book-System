@@ -60,8 +60,8 @@ public class AddressBook implements AddressBookInterface{
 	public void operation() {
 		boolean moreChanges = true;
 		do{
-			System.out.println("\nChoose the operation you want to perform");
-			System.out.println("1.Add To Address Book\n2.Edit Existing Entry\n3.Display Address book\n4.Exit Address book System");
+			System.out.println("\nChoose the Operation you want to perform:");
+			System.out.println("1.Add To Address Book\n2.Edit Existing Entry\n3.Display Address book\n4.Delete Contact\n5.Exit Address book System");
 
 			switch (sc.nextInt()) {
 			case 1:
@@ -74,6 +74,9 @@ public class AddressBook implements AddressBookInterface{
 				displayContents();
 				break;
 			case 4:
+				deletePerson();
+				break;
+			case 5:
 				moreChanges = false;
 				System.out.println("BYE !");
 			}
@@ -130,6 +133,22 @@ public class AddressBook implements AddressBookInterface{
 					break;
 				}
 				
+			}
+		}
+		
+	}
+
+	@Override
+	public void deletePerson() {
+		System.out.println("Enter the first name of the person to be deleted");
+		String firstName = sc.next();
+		Iterator<ContactPerson> iterator = contactList.listIterator();
+		
+		while(iterator.hasNext()) {
+			ContactPerson person = iterator.next();
+			if(firstName.equals(person.getFirstName())) {
+				contactList.remove(person);
+				return;
 			}
 		}
 		

@@ -1,10 +1,6 @@
 package com.bridgelabz.addressbooksystem;
 
-import java.util.Scanner;
-
 public class AddressBookMain {
-	
-static Scanner sc = new Scanner(System.in);
 	
 	public static void main(String[] args) {
 
