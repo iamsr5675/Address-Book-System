@@ -1,8 +1,10 @@
-package com.bridgelabz.addressbooksystem;
+package com.bridgelabz.addressbooksystem.model;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Scanner;
+
+import com.bridgelabz.addressbooksystem.view.AddressBookInterface;
 
 public class AddressBook implements AddressBookInterface{
 	

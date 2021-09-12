@@ -1,4 +1,6 @@
-package com.bridgelabz.addressbooksystem;
+package com.bridgelabz.addressbooksystem.controller;
+
+import com.bridgelabz.addressbooksystem.model.AddressBook;
 
 public class AddressBookMain {
 	

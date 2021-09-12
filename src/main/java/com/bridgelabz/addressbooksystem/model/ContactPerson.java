@@ -1,4 +1,4 @@
-package com.bridgelabz.addressbooksystem;
+package com.bridgelabz.addressbooksystem.model;
 
 public class ContactPerson {
 	private String firstName, lastName, email;
